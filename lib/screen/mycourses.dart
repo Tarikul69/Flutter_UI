@@ -26,7 +26,7 @@ class mycourses extends StatelessWidget {
                   decoration: InputDecoration(
                     iconColor: Colors.white,
                     suffixIcon: Icon(Icons.search),
-                    hintText: "Search coursr/mentor...",
+                    hintText: "Search course/mentor...",
                     border: OutlineInputBorder(),
                   ),
                 ),
