@@ -16,20 +16,23 @@ class orderHistory extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.white,
       ),
-      body: Container(
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: [
-              TextField(
-                decoration: InputDecoration(
-                  iconColor: Colors.white,
-                  suffixIcon: Icon(Icons.search),
-                  hintText: "Search order history...",
-                  border: OutlineInputBorder(),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Container(
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+              children: [
+                TextField(
+                  decoration: InputDecoration(
+                    iconColor: Colors.white,
+                    suffixIcon: Icon(Icons.search),
+                    hintText: "Search order history...",
+                    border: OutlineInputBorder(),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
