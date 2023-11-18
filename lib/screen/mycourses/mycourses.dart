@@ -57,7 +57,8 @@ class mycourses extends StatelessWidget {
                     activeCourses(),
                     download(),
                   ],
-                ))
+                  ),
+                ),
               ],
             ),
           ),
