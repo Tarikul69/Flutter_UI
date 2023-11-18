@@ -7,7 +7,7 @@ class orderHistory extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text(
+        title: const Text(
           "Order History",
           style: TextStyle(
             color: Colors.black,
@@ -23,7 +23,7 @@ class orderHistory extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Column(
               children: [
-                TextField(
+                const TextField(
                   decoration: InputDecoration(
                     iconColor: Colors.white,
                     suffixIcon: Icon(Icons.search),
@@ -31,6 +31,7 @@ class orderHistory extends StatelessWidget {
                     border: OutlineInputBorder(),
                   ),
                 ),
+                card1(context),
               ],
             ),
           ),
@@ -39,7 +40,23 @@ class orderHistory extends StatelessWidget {
     );
   }
 
-  Widget card1() {
-    return Card();
+  Widget card1(context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width,
+      height: 200,
+      child: Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: const Padding(
+          padding: EdgeInsets.all(15),
+          child: Column(
+            children: [
+              Text("data"),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
