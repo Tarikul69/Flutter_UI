@@ -19,7 +19,6 @@ class mycourses extends StatelessWidget {
           ),
           body: Container(
             padding: const EdgeInsets.all(10),
-            
             child: Column(
               children: [
                 TextField(
@@ -35,7 +34,7 @@ class mycourses extends StatelessWidget {
                   decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(80)),
                   ),
-                  child: TabBar(
+                  child: const TabBar(
                     labelColor: Colors.black,
                     dividerColor: Colors.amber,
                     labelStyle: TextStyle(),
