@@ -7,38 +7,96 @@ class detailprofile extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black12,
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
         centerTitle: true,
-        title: Text("Detail Profile"),
+        title: const Text(
+          "Detail Profile",
+          style: TextStyle(color: Colors.black),
+        ),
       ),
-      body: Container(
+      body: const Padding(
         padding: EdgeInsets.all(10),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            CircleAvatar(
+              radius: 70,
+              backgroundImage: NetworkImage(
+                "https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=",
+              ),
+              foregroundImage: NetworkImage(
+                "https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=",
+              ),
+            ),
+            ListTile(
+              title: Text(
+                "Kazi Md Tarikul Imam",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
+              ),
+              subtitle: Text(
+                "@tarikul",
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+            ),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              //mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CircleAvatar(
-                  child: Text("Abcd"),
-                  radius: 70,
-                  backgroundImage: NetworkImage(
-                    "https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=",
+                ListTile(
+                  title: Text(
+                    "Email Address",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                  foregroundImage: NetworkImage(
-                    "https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=",
-                  ),
+                  subtitle: Text("tarikulabir931@gmail.com"),
                 ),
                 ListTile(
                   title: Text(
-                    "Kazi Md Tarikul Imam",
-                    style: TextStyle(),
+                    "Phone Number",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                  subtitle: Text("@tarikul"),
+                  subtitle: Text("+8801521424622"),
+                ),
+                ListTile(
+                  title: Text(
+                    "Location",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  subtitle: Text("Dhaka, Bangladesh"),
                 )
               ],
             ),
-            Column(
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              // mainAxisAlignment: MainAxisAlignment.end,
               children: [],
+            )
+          ],
+        ),
+      ),
+      bottomNavigationBar: SizedBox(
+        width: MediaQuery.of(context).size.width,
+        height: 40,
+        child: Row(
+          children: [
+            ElevatedButton(
+              onPressed: () {},
+              child: Text("Edit Profile"),
+            ),
+            ElevatedButton(
+              style: ButtonStyle(),
+              onPressed: () {},
+              child: Text("Edit Password"),
             ),
           ],
         ),
