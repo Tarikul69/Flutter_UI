@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui/screen/Orderhistory.dart';
 import 'package:ui/screen/abcd.dart';
+import 'package:ui/screen/detailprofile.dart';
 import 'package:ui/screen/mycourses/mycourses.dart';
 import 'package:ui/screen/popularcourses/Populercourses.dart';
   
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       //home: mycourses(),
       //home: Orderhistory(),
       //home: Abcd(),
-      home: Populercourses(),
+      //home: Populercourses(),
+      home: detailprofile(),
     );
   }
 }

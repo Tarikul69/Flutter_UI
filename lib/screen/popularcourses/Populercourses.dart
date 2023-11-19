@@ -37,7 +37,9 @@ class Populercourses extends StatelessWidget {
                 Container(
                   height: 80,
                   decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(80)),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(80),
+                    ),
                   ),
                   child: SingleChildScrollView(
                     scrollDirection: Axis.vertical,
