@@ -18,8 +18,8 @@ class detailprofile extends StatelessWidget {
       body: const Padding(
         padding: EdgeInsets.all(10),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.start,
+          //crossAxisAlignment: CrossAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.start,
           children: [
             CircleAvatar(
               radius: 70,
@@ -30,57 +30,50 @@ class detailprofile extends StatelessWidget {
                 "https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=",
               ),
             ),
+            Center(
+              child: ListTile(
+                title: Text(
+                  "Kazi Md Tarikul Imam",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
+                subtitle: Text(
+                  "@tarikul",
+                  style: TextStyle(
+                    fontSize: 15,
+                  ),
+                ),
+              ),
+            ),
             ListTile(
               title: Text(
-                "Kazi Md Tarikul Imam",
+                "Email Address",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 20,
                 ),
               ),
-              subtitle: Text(
-                "@tarikul",
+              subtitle: Text("tarikulabir931@gmail.com"),
+            ),
+            ListTile(
+              title: Text(
+                "Phone Number",
                 style: TextStyle(
-                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
+              subtitle: Text("+8801521424622"),
             ),
-            Column(
-              children: [
-                ListTile(
-                  title: Text(
-                    "Email Address",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  subtitle: Text("tarikulabir931@gmail.com"),
+            ListTile(
+              title: Text(
+                "Location",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
                 ),
-                ListTile(
-                  title: Text(
-                    "Phone Number",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  subtitle: Text("+8801521424622"),
-                ),
-                ListTile(
-                  title: Text(
-                    "Location",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  subtitle: Text("Dhaka, Bangladesh"),
-                )
-              ],
+              ),
+              subtitle: Text("Dhaka, Bangladesh"),
             ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              // mainAxisAlignment: MainAxisAlignment.end,
-              children: [],
-            )
           ],
         ),
       ),
@@ -99,7 +92,7 @@ class detailprofile extends StatelessWidget {
               child: Text("Edit Password"),
             ),
           ],
-        ),
+        ), 
       ),
     );
   }
