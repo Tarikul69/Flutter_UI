@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
-class Orderhistory extends StatelessWidget {
-  const Orderhistory({Key? key}) : super(key: key);
+class orderhistory01 extends StatelessWidget {
+  const orderhistory01({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white10,
       appBar: AppBar(
-        
         elevation: 0,
         title: const Text(
           "Order History",
@@ -41,6 +40,20 @@ class Orderhistory extends StatelessWidget {
               card1(context),
             ],
           ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Row(
+          children: [
+            Icon(Icons.calendar_month),
+            Text("Date Range"),
+          ],
+        ),
+        backgroundColor: Colors.black,
+        elevation: 5,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(5),
         ),
       ),
     );
@@ -112,7 +125,6 @@ class Orderhistory extends StatelessWidget {
                   //crossAxisAlignment: CrossAxisAlignment.stretch,
                   //children: [Text("data")],
                   )
-               
             ],
           ),
         ),

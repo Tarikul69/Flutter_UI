@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui/screen/Orderhistory.dart';
-import 'package:ui/screen/abcd.dart';
+import 'package:ui/screen/orderhistoory/orderhistory01.dart';
 import 'package:ui/screen/detailprofile.dart';
 import 'package:ui/screen/mycourses/mycourses.dart';
 import 'package:ui/screen/popularcourses/Populercourses.dart';
@@ -14,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //home: mycourses(),
-      //home: Orderhistory(),
-      //home: Abcd(),
-      //home: Populercourses(),
-      home: detailprofile(),
+        // home: mycourses(),
+        home: orderhistory01()
+        // home: Abcd(),
+        // home: Populercourses(),
+        //home: detailprofile(),
     );
   }
 }
