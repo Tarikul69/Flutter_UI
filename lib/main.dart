@@ -3,6 +3,7 @@ import 'package:ui/screen/orderhistoory/orderhistory01.dart';
 import 'package:ui/screen/detailprofile.dart';
 import 'package:ui/screen/mycourses/mycourses.dart';
 import 'package:ui/screen/popularcourses/Populercourses.dart';
+import 'package:ui/screen/review/details.dart';
   
 void main() {
   runApp(const MyApp());
@@ -16,8 +17,9 @@ class MyApp extends StatelessWidget {
       //home: mycourses(),
       //home: orderhistory01()
         // home: Abcd(),
-      home: Populercourses(),
+      //home: Populercourses(),
       //home: detailprofile(),
+      home: details(),
     );
   }
 }
