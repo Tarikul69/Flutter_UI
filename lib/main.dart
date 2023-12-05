@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: mycourses(),
+      //home: mycourses(),
       //home: orderhistory01()
         // home: Abcd(),
-        // home: Populercourses(),
-        //home: detailprofile(),
+      home: Populercourses(),
+      //home: detailprofile(),
     );
   }
 }

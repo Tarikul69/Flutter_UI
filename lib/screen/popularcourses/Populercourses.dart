@@ -10,6 +10,14 @@ class Populercourses extends StatelessWidget {
       home: DefaultTabController(
         length: 4,
         child: Scaffold(
+          floatingActionButtonLocation:
+              FloatingActionButtonLocation.centerFloat,
+          floatingActionButton: FloatingActionButton.extended(
+            onPressed: () {},
+            icon: Icon(Icons.filter),
+            label: Text("Filter"),
+            backgroundColor: Colors.black,
+          ),
           appBar: AppBar(
             backgroundColor: Colors.white,
             centerTitle: true,
