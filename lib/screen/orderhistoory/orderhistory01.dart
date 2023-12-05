@@ -5,6 +5,7 @@ class orderhistory01 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       backgroundColor: Colors.white10,
       appBar: AppBar(
         elevation: 0,
@@ -42,18 +43,14 @@ class orderhistory01 extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
-        child: Row(
-          children: [
-            Icon(Icons.calendar_month),
-            Text("Date Range"),
-          ],
-        ),
+        icon: const Icon(Icons.calendar_month),
+        label: const Text("Date Range"),
         backgroundColor: Colors.black,
         elevation: 5,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(12),
         ),
       ),
     );

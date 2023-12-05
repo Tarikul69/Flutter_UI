@@ -11,6 +11,14 @@ class mycourses extends StatelessWidget {
       home: DefaultTabController(
         length: 2,
         child: Scaffold(
+          floatingActionButtonLocation:
+              FloatingActionButtonLocation.centerFloat,
+          floatingActionButton: FloatingActionButton.extended(
+            onPressed: () {},
+            icon: Icon(Icons.filter),
+            label: Text("Filter"),
+            backgroundColor: Colors.black,
+          ),
           backgroundColor: const Color.fromARGB(25, 27, 27, 27),
           appBar: AppBar(
             backgroundColor: const Color.fromARGB(255, 27, 27, 27),
@@ -18,7 +26,7 @@ class mycourses extends StatelessWidget {
             title: const Text(" My Course"),
           ),
           body: Container(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),     
             child: Column(
               children: [
                 TextField(
@@ -52,11 +60,11 @@ class mycourses extends StatelessWidget {
                   height: 15,
                 ),
                 Expanded(
-                    child: TabBarView(
-                  children: [
-                    activeCourses(),
-                    download(),
-                  ],
+                  child: TabBarView(
+                    children: [
+                      activeCourses(),
+                      download(),
+                    ],
                   ),
                 ),
               ],
@@ -65,100 +73,5 @@ class mycourses extends StatelessWidget {
         ),
       ),
     );
-    // return MaterialApp(
-    //   home: Scaffold(
-    //     backgroundColor: const Color.fromARGB(25, 27, 27, 27),
-    //     appBar: AppBar(
-    //       backgroundColor: const Color.fromARGB(255, 27, 27, 27),
-    //       centerTitle: true,
-    //       title: const Text(" My Course"),
-    //     ),
-    //     body: Container(
-    //       padding: const EdgeInsets.all(10),
-    //       child: Column(
-    //         children: [
-    //           TextField(
-    //             decoration: InputDecoration(
-    //               iconColor: Colors.white,
-    //               suffixIcon: Icon(Icons.search),
-    //               hintText: "Search coursr/mentor...",
-    //               border: OutlineInputBorder(),
-    //             ),
-    //           ),
-    //           DefaultTabController(
-    //             length: 2,
-    //             child: Container(
-    //               height: 80,
-    //               decoration: const BoxDecoration(
-    //                 borderRadius: BorderRadius.all(Radius.circular(40)),
-    //               ),
-    //               child: const TabBar(
-    //                 physics: ScrollPhysics(),
-    //                 labelColor: Colors.black,
-    //                 dividerColor: Colors.amber,
-    //                 labelStyle: TextStyle(),
-    //                 tabs: [
-    //                   Tab(
-    //                     child: Text("Active Course"),
-    //                   ),
-    //                   Tab(
-    //                     child: Text("Download"),
-    //                   )
-    //                 ],
-    //               ),
-    //             ),
-    //           ),
-    //         ],
-    //       ),
-    //     ),
-    //   ),
-    // );
-    // return Scaffold(
-    //   backgroundColor: const Color.fromARGB(25, 27, 27, 27),
-    //   appBar: AppBar(
-    //     backgroundColor: const Color.fromARGB(255, 27, 27, 27),
-    //     centerTitle: true,
-    //     title: const Text(" My Course"),
-    //   ),
-    //   body: Container(
-    //     padding: const EdgeInsets.all(10),
-    //     child: Column(
-    //       children: [
-    //         TextField(
-    //           decoration: InputDecoration(
-    //             iconColor: Colors.white,
-    //             suffixIcon: Icon(Icons.search),
-    //             hintText: "Search coursr/mentor...",
-    //             border: OutlineInputBorder(),
-    //           ),
-    //         ),
-    //         DefaultTabController(
-    //           length: 2,
-    //           child: Container(
-    //             height: 80,
-    //             decoration: const BoxDecoration(
-    //               borderRadius: BorderRadius.all(Radius.circular(40)),
-    //             ),
-    //             child: const TabBar(
-    //               physics: ScrollPhysics(),
-    //               labelColor: Colors.black,
-    //               dividerColor: Colors.amber,
-    //               labelStyle: TextStyle(),
-    //               tabs: [
-    //                 Tab(
-    //                   child: Text("Active Course"),
-    //                 ),
-    //                 Tab(
-    //                   child: Text("Download"),
-    //                 )
-    //               ],
-    //             ),
-    //           ),
-    //         ),
-    //       ],
-    //     ),
-    //   ),
-
-    // );
   }
 }
