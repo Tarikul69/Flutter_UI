@@ -15,6 +15,7 @@ class details extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.white,
+            elevation: 0,
             title: Text(
               "Details",
               style: TextStyle(
@@ -28,6 +29,18 @@ class details extends StatelessWidget {
             child: Column(
               children: [
                 card1(context),
+                ListTile(
+                  title: Text(
+                    "Animation is the key of Successfully UI/UX Design",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 32,
+                      fontFamily: AutofillHints.namePrefix,
+                    ),
+                  ),
+                  subtitle: Text(
+                      "Animation plays a crucial role in creating successfull UI/UX design. It can help to make interface more interactive"),
+                ),
                 Container(
                   height: 80,
                   decoration: const BoxDecoration(
@@ -53,6 +66,7 @@ class details extends StatelessWidget {
                 SizedBox(
                   height: 15,
                 ),
+                 
                 Expanded(
                   child: TabBarView(
                     children: [
