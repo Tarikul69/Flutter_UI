@@ -18,6 +18,7 @@ class about extends StatelessWidget {
                 "Overview",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
+                  fontSize: 18,
                 ),
               ),
               SizedBox(
@@ -128,6 +129,22 @@ class about extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 15,
+              ),
+              Text(
+                "Mentor",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [],
+              )
             ],
           ),
         ),
