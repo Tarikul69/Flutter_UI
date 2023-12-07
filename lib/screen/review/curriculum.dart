@@ -221,15 +221,18 @@ class curriculum extends StatelessWidget {
                 )
               ],
             ),
-            // Row(
-            //   children: [
-            //     Text('354'),
-            //     ElevatedButton(
-            //       onPressed: () {},
-            //       child: Text("Enroll Now"),
-            //     )
-            //   ],
-            // )
+            Row(
+              children: [
+                Text('354'),
+                Align(
+                  alignment: Alignment.bottomLeft,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Text("Enroll Now"),
+                  ),
+                )
+              ],
+            )
           ],
         ),
       )
